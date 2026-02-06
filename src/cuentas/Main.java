@@ -1,12 +1,20 @@
 package cuentas;
+
 /**
   Clase principal del proyecto Depósito.
   Crea una cuenta y ejecuta operaciones sobre ella mediante el método operativa_cuenta.
  */
 public class Main {
-   /**
+
+    /**
+      Constructor por defecto de la clase Main.
+     */
+    public Main() {
+    }
+
+    /**
       Punto de entrada.
-      @param args argumentos de la línea de comandos 
+      @param args argumentos de la línea de comandos
      */
     public static void main(String[] args) {
 
@@ -20,8 +28,9 @@ public class Main {
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es " + saldoActual);
     }
-  /**
-      Realiza operaciones sobre una cuenta retirada e ingreso.
+
+    /**
+      Realiza operaciones sobre una cuenta (retirada e ingreso).
       @param cuenta1 cuenta sobre la que se realizan las operaciones
       @param cantidad cantidad que se va a ingresar en la cuenta
      */
@@ -35,7 +44,7 @@ public class Main {
 
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(cantidad); // float
+            cuenta1.ingresar(cantidad);
         } catch (Exception e) {
             System.out.println("Fallo al ingresar: " + e.getMessage());
         }
