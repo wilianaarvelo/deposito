@@ -1,7 +1,13 @@
 package cuentas;
-
+/**
+  Clase principal del proyecto Depósito.
+  Crea una cuenta y ejecuta operaciones sobre ella mediante el método operativa_cuenta.
+ */
 public class Main {
-
+   /**
+      Punto de entrada.
+      @param args argumentos de la línea de comandos 
+     */
     public static void main(String[] args) {
 
         CCuenta cuenta1;
@@ -14,7 +20,11 @@ public class Main {
         saldoActual = cuenta1.estado();
         System.out.println("El saldo actual es " + saldoActual);
     }
-
+  /**
+      Realiza operaciones sobre una cuenta retirada e ingreso.
+      @param cuenta1 cuenta sobre la que se realizan las operaciones
+      @param cantidad cantidad que se va a ingresar en la cuenta
+     */
     public static void operativa_cuenta(CCuenta cuenta1, float cantidad) {
 
         try {
